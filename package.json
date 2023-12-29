@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.mjs",
   "scripts": {
-    "test": "node index.mjs"
+    "test": "mocha --require esm test/**/*.js"
   },
   "keywords": [],
   "author": "",
