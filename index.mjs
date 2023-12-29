@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 dotenv.config();
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 1000;
 
 app.use(express.json());
 const whitelisted = ['https://newtai.bgfxd.repl.co', 'https://myfile.amigohaycyril.repl.co'];
