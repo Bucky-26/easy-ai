@@ -17,7 +17,7 @@ jobs:
       run: |
         # Add commands to deploy your project on the VPS
         # For example, you might use SSH to connect to your VPS and pull the latest changes
-        ssh user@your-vps-ip 'cd /path/to/your/project && git pull origin main'
+        ssh root@139.99.117.39 'cd /root/easy-ai && git pull origin main'
 
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
