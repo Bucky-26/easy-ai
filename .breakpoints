@@ -1,0 +1,18 @@
+{
+  "files": {
+    "index.mjs": [
+      {
+        "id": "11ef8e53-93ba-46f8-8932-f297e3c6c5fc",
+        "line": 1,
+        "version": 372,
+        "index": 0
+      },
+      {
+        "id": "74a2ba89-e0f8-4c16-a5b4-eecd8943800d",
+        "line": 47,
+        "version": 372,
+        "index": 1277
+      }
+    ]
+  }
+}
