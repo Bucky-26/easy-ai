@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.mjs",
   "scripts": {
-    "test": "mocha --require esm test/**/*.js"
-  },
+  "test": "mocha --require esm test/**/*.mjs"
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",
