@@ -7,7 +7,20 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 dotenv.config();
 const app = express();
-const port = process.env.PORT || 6000;
+const port = 3001;
+app.use((req, res, next) => {
+  const forwardedFor = req.headers['x-forwarded-for'];
+
+  // Allow access if the x-forwarded-for header is present
+  if (forwardedFor) {
+    next();
+  } else {
+    // Block direct IP access
+    res.status(403).json({ error: 'Forbidden - Direct IP access is not allowed' });
+  }
+});
+
+app.use(express.json());
 
 app.use(express.json());
 const whitelisted = ['https://newtai.bgfxd.repl.co', 'https://myfile.amigohaycyril.repl.co'];
@@ -23,10 +36,7 @@ app.get('/api/:model', async (req, res) => {
 		if (m == "mistral") {
 			var model = "mistralai/mistral-7b-instruct";
 
-		} else if (m == "toppy") {
-
-			var model = "undi95/toppy-m-7b";
-		} else if (m == "zephyr") {
+		}  else if (m == "zephyr") {
 			var model = "huggingfaceh4/zephyr-7b-beta";
 		} else if (m == "mythomist") {
 			var model = "gryphe/mythomist-7b";
@@ -42,10 +52,6 @@ app.get('/api/:model', async (req, res) => {
 			var model = "openrouter/cinematika-7b";
 
 		}
-		else if (m == "mixtral") {
-			var model = "fireworks/mixtral-8x7b-fw-chat";
-
-		}
 		else {
 			res.json({ error: "Invalid AI  Model" })
 			return false;
@@ -54,8 +60,8 @@ app.get('/api/:model', async (req, res) => {
 			method: "POST",
 			headers: {
 				Authorization: `Bearer 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`,
-				"HTTP-Referer": 'https://claude-1.easyapi0.repl.co/api/claude',
-				"X-Title": '',
+				"HTTP-Referer": 'https://ai.ea-sy.tech/',
+				"X-Title": 'EASY API',
 				'Content-Type': 'application/json',
 			},
 			body: JSON.stringify({
