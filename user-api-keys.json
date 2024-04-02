@@ -1,0 +1,50 @@
+{
+  "c8a19f47-5870-4e8a-bd92-1a0fd8ebfe25": {
+    "user": "john_doe",
+    "requests": 0
+  },
+  "ec552527-ffae-4d41-8374-55d1aaf5d67b": {
+    "user": "jane_smith",
+    "requests": 0
+  },
+  "2d81062a-94e0-4af2-bf01-f9c79c74a31c": {
+    "user": "bob_jones",
+    "requests": 2
+  },
+  "zie-ai-v1-cde4fc58-0fae-47d2-9b6a-c0374c980067": {
+    "user": "Zie",
+    "requests": 145
+  },
+  "zie-ai-v1-9687e537-65bf-48e6-bd75-1adc8cb5cd9c": {
+    "user": "Zie",
+    "requests": 4
+  },
+  "zie-ai-v1-429ecc55-5bd5-4c08-aa39-4078baf3047f": {
+    "user": "Zie",
+    "requests": 0
+  },
+  "zie-ai-v1-91ba82d1-d686-4064-94e2-1eba8e39fdeb": {
+    "user": "Liane",
+    "requests": 0
+  },
+  "zie-ai-v1-8ec49611-8ad2-49f3-aa5c-96a45d02c1e9": {
+    "user": "Zie 01",
+    "requests": 0
+  },
+  "zie-ai-v1-c1798d25-830a-4c0e-bda7-2e01d9f75ec7": {
+    "user": "null",
+    "requests": 0
+  },
+  "zie-ai-v1-cd9b4a05-4c70-4951-ac34-9eb155e65457": {
+    "user": "null",
+    "requests": 0
+  },
+  "zie-ai-v1-b602ac57-f8dd-4f7f-b039-db1c8c33598e": {
+    "user": "null",
+    "requests": 0
+  },
+  "zie-ai-v1-d17d3149-8f5e-45dd-8cb5-493d2d90357a": {
+    "user": "Zie",
+    "requests": 0
+  }
+}
